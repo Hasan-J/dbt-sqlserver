@@ -176,6 +176,8 @@
       {% do post_snapshot(staging_table) %}
   {% endif %}
 
+  {{ return({'relations': [target_relation]}) }}
+
 {% endmaterialization %}
 
 {% macro sqlserver__post_snapshot(staging_relation) %}
