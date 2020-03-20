@@ -165,8 +165,8 @@
                 insert_cols = quoted_source_columns
              )
           }}
-          {{ drop_relation(staging_table) }}
       {% endcall %}
+      {{ drop_relation(staging_table) }}
 
   {% endif %}
 
